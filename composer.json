@@ -1,0 +1,9 @@
+{
+    "name": "pixney/wysiwyg_block-extension",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Pixney\\WysiwygBlockExtension\\": "src/"
+        }
+    }
+}
