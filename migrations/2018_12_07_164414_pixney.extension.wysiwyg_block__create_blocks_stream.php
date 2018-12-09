@@ -10,7 +10,8 @@ class PixneyExtensionWysiwygBlockCreateBlocksStream extends Migration
      * @var array
      */
     protected $stream = [
-        'slug' => 'blocks'
+        'slug'         => 'blocks',
+        'translatable' => true,
     ];
 
     /**
@@ -19,6 +20,8 @@ class PixneyExtensionWysiwygBlockCreateBlocksStream extends Migration
      * @var array
      */
     protected $assignments = [
-        'content'
+        'content' => [
+            'translatable' => true,
+        ],
     ];
 }

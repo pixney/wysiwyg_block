@@ -9,4 +9,12 @@ return [
             'delete' => 'Can delete blocks?',
         ],
     ],
+    'test' => [
+        'name'   => 'Test',
+        'option' => [
+            'read'   => 'Can read test?',
+            'write'  => 'Can create/edit test?',
+            'delete' => 'Can delete test?',
+        ],
+    ],
 ];

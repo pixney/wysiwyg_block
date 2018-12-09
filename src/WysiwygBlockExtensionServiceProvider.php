@@ -1,6 +1,10 @@
 <?php namespace Pixney\WysiwygBlockExtension;
 
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
+use Pixney\WysiwygBlockExtension\Test\Contract\TestRepositoryInterface;
+use Pixney\WysiwygBlockExtension\Test\TestRepository;
+use Anomaly\Streams\Platform\Model\WysiwygBlock\WysiwygBlockTestEntryModel;
+use Pixney\WysiwygBlockExtension\Test\TestModel;
 use Pixney\WysiwygBlockExtension\Block\Contract\BlockRepositoryInterface;
 use Pixney\WysiwygBlockExtension\Block\BlockRepository;
 use Anomaly\Streams\Platform\Model\WysiwygBlock\WysiwygBlockBlocksEntryModel;
@@ -98,6 +102,7 @@ class WysiwygBlockExtensionServiceProvider extends AddonServiceProvider
      * @type array|null
      */
     protected $bindings = [
+        WysiwygBlockTestEntryModel::class => TestModel::class,
         WysiwygBlockBlocksEntryModel::class => BlockModel::class,
     ];
 
@@ -107,6 +112,7 @@ class WysiwygBlockExtensionServiceProvider extends AddonServiceProvider
      * @type array|null
      */
     protected $singletons = [
+        TestRepositoryInterface::class => TestRepository::class,
         BlockRepositoryInterface::class => BlockRepository::class,
     ];
 

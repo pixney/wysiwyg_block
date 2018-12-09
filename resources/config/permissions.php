@@ -6,4 +6,9 @@ return [
         'write',
         'delete',
     ],
+    'test' => [
+        'read',
+        'write',
+        'delete',
+    ],
 ];
