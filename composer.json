@@ -1,9 +1,14 @@
 {
     "name": "pixney/wysiwyg_block-extension",
+    "description": "Simple wysiwyg block.",
     "type": "streams-addon",
     "autoload": {
         "psr-4": {
             "Pixney\\WysiwygBlockExtension\\": "src/"
         }
+    },
+    "require": {
+        "anomaly/blocks-module": "^1.2.0"
     }
+
 }
