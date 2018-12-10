@@ -17,7 +17,17 @@ class PixneyExtensionWysiwygBlockCreateWysiwygBlockFields extends Migration
             'locked' => false,
             'config' => [
                 'default_value' => null,
-                'configuration' => 'default',
+
+                'buttons' => [
+                    'format',
+                    'bold',
+                    'italic',
+                    'lists',
+                    'link',
+                    'underline',
+                ],
+                'configuration' => '',
+                'plugins'       => ['alignment'],
                 'line_breaks'   => false,
                 'sync'          => true,
                 'height'        => 300,
