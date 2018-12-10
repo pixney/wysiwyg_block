@@ -27,7 +27,7 @@ class PixneyExtensionWysiwygBlockCreateWysiwygBlockFields extends Migration
                     'underline',
                 ],
                 'configuration' => '',
-                'plugins'       => ['alignment'],
+                'plugins'       => ['alignment', 'source'],
                 'line_breaks'   => false,
                 'sync'          => true,
                 'height'        => 300,
