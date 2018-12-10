@@ -10,6 +10,7 @@ class PixneyExtensionWysiwygBlockCreateWysiwygBlockFields extends Migration
      * @var array
      */
     protected $fields = [
+        'classes' => 'anomaly.field_type.text',
         'content' => [
             'type'   => 'anomaly.field_type.wysiwyg',
             'name'   => 'content',

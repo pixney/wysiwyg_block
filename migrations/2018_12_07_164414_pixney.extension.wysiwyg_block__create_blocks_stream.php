@@ -23,5 +23,6 @@ class PixneyExtensionWysiwygBlockCreateBlocksStream extends Migration
         'content' => [
             'translatable' => true,
         ],
+        'classes'
     ];
 }
