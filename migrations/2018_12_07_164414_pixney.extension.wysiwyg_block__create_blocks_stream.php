@@ -15,7 +15,7 @@ class PixneyExtensionWysiwygBlockCreateBlocksStream extends Migration
     ];
 
     /**
-     * The stream assignments.
+     * The stream assignments..
      *
      * @var array
      */
