@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'       => 'Wysiwyg Block',
+    'title'       => 'Content',
     'name'        => 'Wysiwyg Block Extension',
-    'description' => ''
+    'description' => 'Content editor'
 ];
