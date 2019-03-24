@@ -4,6 +4,7 @@ namespace Pixney\WysiwygBlockExtension;
 
 use Anomaly\BlocksModule\Block\BlockExtension;
 use Pixney\WysiwygBlockExtension\Block\BlockModel;
+use Anomaly\SettingsModule\Setting\Contract\SettingRepositoryInterface;
 
 class WysiwygBlockExtension extends BlockExtension
 {
@@ -13,12 +14,9 @@ class WysiwygBlockExtension extends BlockExtension
 
     public function getView()
     {
-        // TODO : Either get active theme or config..
-        return 'pixney.theme.esharawater::blocks/wysiwyg';
-
-        // if ($this->block->configuration('something_special')) {
-        //     return 'my_company.extension.awesome_block::alternate_view';
-        // }
-        // return $this->view;
+        $settings      = app(SettingRepositoryInterface::class);
+        $setting       = $settings->get('streams::standard_theme');
+        $this->wrapper = $setting->value . '::blocks/global/wrapper';
+        return $setting->value . '::blocks/wysiwyg';
     }
 }
